@@ -1590,9 +1590,9 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Raleway", Helvetica, sans-serif;
+		font-family: 'Raleway', sans-serif;
 		font-size: 13pt;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 2em;
 	}
 
@@ -1657,9 +1657,12 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 700;
+		font-weight: lighter !important ;
 		line-height: 1em;
 		margin: 0 0 1em 0;
+		/*text-transform: uppercase;*/
+	}
+	.uppercase{
 		text-transform: uppercase;
 	}
 
@@ -1716,7 +1719,7 @@
 		border-radius: 4px;
 		border-style: solid;
 		border-width: 1px;
-		font-family: "Courier New", monospace;
+		font-family: 'Raleway', sans-serif;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -1724,7 +1727,7 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: 'Raleway', sans-serif;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -3876,11 +3879,15 @@
 
 	#banner {
 		padding: 8em 0 6em 0;
-		background-color: #1E2832;
+		
 		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
-		background-size: cover;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+18,b0d5f2+100 */
+background: rgb(30,87,153); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 18%, rgba(176,213,242,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 18%,rgba(176,213,242,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 18%,rgba(176,213,242,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#b0d5f2',GradientType=1 ); /* IE6-9 */
+
 		text-align: center;
 	}
 

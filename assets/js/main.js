@@ -24,7 +24,13 @@
 		$('#learn-more-btn').click(function(){
 			$('html, body').animate({
         scrollTop: $("#one").offset().top
-    }, 2000);
+    }, 1600);
+		});
+		
+		$('#learn-more-btn2').click(function(){
+			$('html, body').animate({
+        scrollTop: $("#three").offset().top
+    }, 1600);
 		});
 
 		var	$window = $(window),
